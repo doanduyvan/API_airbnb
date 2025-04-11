@@ -66,3 +66,14 @@ If you discover a security vulnerability within Laravel, please send an e-mail t
 The Laravel framework is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
 
 đường dẫn: /c/FPT/testALL/backend_api_for_Trung/backend
+
+
+ * Các bước cần làm sau khi pull dự án.
+
+ yêu cầu máy đã cài php 8 trở lên
+ cp .env.example .env = copy file .env.example sang file .env
+ composer install = cài thư viện trong file composer.json, giống như lệnh npm install
+ php artisan key:generate  = tạo key cho laravel, đây là mặc định laravel cần phải có
+ thiết lập kết nối cơ sở dữ liệu trong file .env
+ php artisan jwt:secret = tạo khóa bí mật cho JWT 
+ php artisan serve = lệnh chạy dự án
